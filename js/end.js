@@ -51,7 +51,7 @@ switch ($getBook.title) {
         break;
 
     case "던전앤드래곤-도적들의 명예":
-        $posterImg.src = '../image/PO전던앤드래곤.jpg';
+        $posterImg.src = '../image/PO던전앤드래곤.jpg';
         $age.innerHTML = '12세이상관람가';
         $movieTitle.innerHTML = '던전앤드래곤<br><span>도적들의명예</span>';
         $qrcode.src = '../image/QR던전앤드래곤.jpg';
