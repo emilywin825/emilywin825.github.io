@@ -1,0 +1,173 @@
+
+.main-screen {
+    /* background: aqua; */
+    border: 1px solid #000;
+    position: relative;
+    background-color: rgb(34, 28, 28);
+   
+}
+
+.slide-container {
+  
+    position: absolute;
+    width: 100%;
+    height: 71%;
+    overflow: hidden;
+    
+
+}
+
+.slide-wrapper {
+    /* border: 1px solid #000; */
+    height: 473px;
+    /* width: 2253px;  */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 0.5s ease-out;
+    background: rgb(180, 48, 48);
+
+
+}
+
+.slide {
+    float: left;
+    /* border: 1px solid #000; */
+    margin-left: 33px;
+
+
+}
+
+.slide>img {
+    width: 336px;
+    height: 473px;
+    
+}
+
+.slide-controller {
+
+    display: flex;
+    justify-content: space-between;
+    height: 478px;
+   
+
+
+
+}
+
+.slide-controller div {
+    height: 478px;
+    width: 34px;
+    z-index: 500;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(133, 20, 20);
+    
+}
+
+.next {
+    background-image: url('../image/nextKakaoTalk_20230328_161359586_03.png');
+   
+
+}
+
+.prev {
+    background-image: url('../image/prevKakaoTalk_20230328_161359586_04.png');
+
+}
+.movie-container{
+     background-color: rgb(133, 20, 20);
+    position: absolute;
+    bottom: 0;
+    height: 27%;
+    width: 100%;
+    display: flex;
+    
+}
+.movie-text{
+    width: 50%;
+    font-size: 0.8em;
+    
+}
+.movie-text p{
+    
+margin: 14px;
+margin-top: 25px;
+}
+.movie-container p{
+    font-family: 'Orbitron', sans-serif;
+    color:  #a1a1a1;
+    font-size: 3em;
+    padding: 3%;
+    font-weight: 700;
+   
+    float: left;
+    display: block;
+    
+    
+    
+}
+.movie-container span{
+font-size: 0.5em;
+}
+.movie-explain{
+   
+    height: 100%;
+    width: 50%;
+    font-size: 0.5em;
+    display: flex;
+   
+    
+    
+
+}
+.movie-explain p{
+    text-align: center;
+    margin: 0 auto; 
+    
+   
+}
+.title-box1{
+    border: 3px solid #ffffff;  
+border-radius: 50%;
+height: 155px;
+width: 155px;
+margin-top: 20px; 
+margin-left: 190px;
+background-color: rgb(34, 28, 28);
+
+}
+.tiketing-box1{
+  border: 3px solid #ffffff;   
+    border-radius: 50%;
+    height: 155px;
+    width: 155px;
+    margin-top: 20px; 
+    margin-left: 50px;
+    background-color: rgb(34, 28, 28);
+}
+.title-box1 p{
+margin-top: 52px;
+font-size: 20px;
+margin-left: -5px;
+color: rgb(255, 255, 255);
+
+height: 60px;
+width: 160px;
+display: block;
+
+
+}
+.tiketing-box1 p{
+    font-size: 25px;
+    margin-top: 39px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.movie-explain .movie-tiketing{
+line-height: 59px;
+
+}
+

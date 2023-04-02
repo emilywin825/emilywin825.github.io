@@ -1,0 +1,458 @@
+.main-screen .container {
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 80%;
+    
+}
+
+.main-screen .container .part {
+    float: left;
+    border: 1px solid lightgray;
+    border-top: 0;
+    background: #f2f0e5;
+}
+.main-screen .container .part .title {
+    background: rgb(41, 40, 40);
+    color: lightgray;
+    text-align: center;
+
+    font-size: 1.2em;
+    height: 7%;
+    padding-top: 7px;
+    
+}
+
+
+/* ============================= start 영화 */
+
+.main-screen .container .movie {
+    width: 30%;
+    height: 100%;
+}
+.main-screen .container .movie .movie-wrap {
+    margin: 30px;
+}
+.main-screen .container .movie .movie-wrap .order {
+    border-bottom: 1px solid #000;
+    padding: 0 0 10px 10px;
+    margin-bottom: 15px;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+.main-screen .container .movie .movie-wrap .movie-list ul{
+    overflow: hidden;
+}
+.main-screen .container .movie .movie-wrap .movie-list li {
+    /* margin-bottom: 10px; */
+    padding-bottom: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    height: 30px;
+    cursor: pointer;
+    
+}
+.main-screen .container .movie .movie-wrap .movie-list .ban12::before {
+    content: '.....';
+    margin-left: 10px;
+    margin-right: 10px;
+    background: url("../image/ban12.png") no-repeat center / cover;
+    
+}
+.main-screen .container .movie .movie-wrap .movie-list .ban15::before {
+    content: '.....';
+    margin-left: 10px;
+    margin-right: 10px;
+    background: url("../image/ban15.png") no-repeat center / cover ;
+    
+}
+.main-screen .container .movie .movie-wrap .movie-list .all::before {
+    content: '.....';
+    margin-left: 10px;
+    margin-right: 10px;
+    background: url("../image/All.png") no-repeat center / cover ;
+   
+}
+
+.main-screen .container .movie .movie-wrap .movie-list ul li.soldout {
+    opacity: 0.3;
+}
+/* ============================= end 영화 */
+
+/* ============================= start 극장 */
+
+.main-screen .container .theater {
+    width: 30%;
+    height: 100%;
+}
+.main-screen .container .theater .theater-content-wrap {
+    display: flex;
+    padding-top: 20px;
+}
+
+.main-screen .container .theater .region-wrap {
+    width: 40%;
+    margin-left: 30px;
+}
+.main-screen .container .theater .region-wrap .region {
+   text-align: right;
+   padding-right: 10px;
+}
+.main-screen .container .theater .region-wrap .region li {
+    background:#d4d3c9;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 3px;
+    font-size: 13px;
+    width: 100%;
+    cursor: pointer;
+}
+.main-screen .container .theater .city-wrap{
+    width: 40%;
+    /* border: 1px solid #000; */
+    
+}
+.main-screen .container .theater .city-wrap .city {
+    display: none;
+    position: absolute;
+    padding-left: 10px;
+    
+}
+.main-screen .container .theater .city-wrap .city li {
+    padding: 10px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}   
+
+/* ============================= end 극장 */
+
+/* ============================= start 날짜 */
+
+.main-screen .container .date {
+    width: 15%;
+    height: 100%;
+    
+}
+.main-screen .container .date .date-wrap {
+    padding: 20px;
+}
+.main-screen .container .date .yearmonth-wrap {
+    color: rgb(124, 123, 123);
+}
+
+.main-screen .container .date .yearmonth-wrap .year {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.main-screen .container .date .yearmonth-wrap .month {
+    text-align: center;
+    
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+}
+/* @@@@@@@@@@@@@@@ */
+.main-screen .container .date .daydate-wrap {
+    /* margin-left: 10px; */
+    align-items: center;
+    margin-left: 25px;
+    
+}
+.main-screen .container .date .daydate {
+    /* margin: 15px auto 0; */
+    margin-top: 5px;
+    padding-top: 8px;
+    
+    width: 80%;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+}
+.main-screen .container .date  .sat {
+    color: rgb(31, 31, 156);
+}
+.main-screen .container .date  .sun {
+    color: rgb(158, 35, 35);
+}
+.main-screen .container .date .daydate-wrap .day {
+    padding-left: 15px;
+    margin-right: 10px;
+    
+    
+}
+.main-screen .container .date .daydate-wrap .detaildate {
+    font-weight: 700;
+}
+
+
+/* @@@@@@@@@@@@@@@ */
+
+
+
+
+
+
+/* ============================= end 날짜 */
+
+/* ============================= start 시간 */
+
+
+.main-screen .container .time {
+    width: 25%;
+    height: 100%;
+}
+
+.main-screen .container .time .time-wrap {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.main-screen .container .time .time-wrap .time-option {
+    border-bottom: 3px solid lightgray;
+    font-size: 13px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    /* padding-left: 10px; */
+    height: 18px;
+}
+
+.main-screen .container .time .time-wrap .time-option .sun-image {
+    background: url('../image/sun.png') no-repeat center / cover;
+}
+.main-screen .container .time .time-wrap .time-option .moon-image {
+    background: url('../image/moon.png') no-repeat center / cover;
+    z-index: 99;
+}
+
+.main-screen .container .time .time-wrap .room {
+    height: 100px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.main-screen .container .time .time-wrap .room .section-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.main-screen .container .time .time-wrap .room .section-title b {
+    color: rgb(206, 52, 52);
+}
+.main-screen .container .time .time-wrap .room .time-list {
+    border-bottom: 3px solid lightgray;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.main-screen .container .time .time-wrap .room:last-child .time-list {
+    border: 0;
+}
+.main-screen .container .time .time-wrap .room .time-list li {
+    width: 30%;
+    display: inline;
+    margin: 10px 0;
+    cursor: pointer;
+    line-height: 30px;
+}
+.main-screen .container .time .time-wrap .room .time-list li .start-time {
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid rgb(219, 217, 217);
+    margin-right: 3px;
+    padding: 3px;
+}
+.main-screen .container .time .time-wrap .room .time-list li .left-seat {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(32, 99, 32);
+}
+
+
+/* ============================= end 시간 */
+
+/* ============================= start check-content */
+
+.main-screen .check-content {
+    background: rgb(41, 40, 40);
+    width: 100%;
+    height: 20%;
+}
+
+.main-screen .check-content .checkpart {
+    margin-top: 5px;
+    width: 30%;
+    height: 90%;
+    float: left;
+    font-size: 15px;
+    font-weight: 700;
+    color: #cecdc7;
+}
+.main-screen .check-content .checkpart:nth-child(3) {
+    width: 40%;
+}
+.main-screen .check-content .poster-title .poster {
+    width: 40%;
+    height: 100%;
+    margin-left: 20px;
+    float: left;
+}
+/* 사진 목록 ============================================ start */
+
+.main-screen .check-content .poster-title .slamdunk {
+    background: url('../image/slamdunk.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .suzume {
+    background: url('../image/suzume.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .dungeon {
+    background: url('../image/dungeons.jpg') no-repeat center / 60%;   
+}
+.main-screen .check-content .poster-title .woongnam {
+    background: url('../image/woongnam.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .elcamino {
+    background: url('../image/elcamino.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .soulmate {
+    background: url('../image/soulmate.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .otto {
+    background: url('../image/otto.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .layover {
+    background: url('../image/layover.jpg') no-repeat center / 60%;
+}
+
+
+
+/* 사진 목록 ============================================ end */
+.main-screen .check-content .poster-title .title-wrap {
+    margin-top: 20px;
+    width: 50%;
+    height: 50%;
+    /* border: 1px solid red; */
+    float: left;
+}
+.main-screen .check-content .poster-title .title-wrap span {
+    /* display: block; */
+    /* border: 1px solid #00ff15; */
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main-screen .check-content .book-info {
+    padding-top: 10px;
+}
+.main-screen .check-content .book-info span {
+    margin-left: 10px;
+}
+.main-screen .check-content .book-info .selected-location-wrap {
+    margin-top: 20px;
+}
+.main-screen .check-content .book-info .selected-location-wrap b {
+    margin-right: 10px;
+}
+.main-screen .check-content .book-info .selected-date-wrap {
+    margin-top: 10px;
+}
+.main-screen .check-content .book-info .selected-room-wrap {
+    margin-top: 10px;
+}
+
+.main-screen .check-content .book-info .selected-date-wrap span:nth-child(3) {
+    margin-left: 0;
+}
+
+.main-screen .check-content .next-btn .next-btn-wrap {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.main-screen .check-content .next-btn .next-btn-wrap a {
+    margin-top: 5px;
+    border: 3px dashed rgb(212, 211, 211);
+    border-radius: 20%;
+    display: block;
+    width: 50%;
+    height: 90%;
+}
+.main-screen .check-content .next-btn .next-btn-wrap .btn-icon {
+    margin: 10px 0 10px 0;
+    font-size: 40px;
+    text-align: center;
+}
+.main-screen .check-content .next-btn .next-btn-wrap .btn-text {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 12px;
+
+}
+
+
+
+/* ============================= end check-content */
+
+/* ============================= 클래스 추가 / 삭제 */
+
+/* .default-color-region {
+    background: #d4d3c9;
+} */
+
+.main-screen .container .movie .movie-wrap .movie-list li.change-color-movie {
+    background: rgb(41, 40, 40);
+    color: #fff;
+    border: 4px double lightgray;
+}
+
+
+
+.main-screen .container .theater .region-wrap .region li.change-color-region {
+    background: #f2f0e5;
+}
+
+.main-screen .container .theater .city-wrap ul.show-city {
+    display: block;
+}
+
+.main-screen .container .theater .city-wrap ul li.change-color-city {
+    background: rgb(68, 67, 67);
+    color: #fff;
+    border: 3px double lightgray;
+    
+}
+
+
+.main-screen .container .date .daydate-wrap div.change-color-daydate {
+    background: rgb(68, 67, 67);
+    color: #fff;
+    border: 3px double lightgray;
+
+}
+
+
+.main-screen .container .time .time-wrap .room .time-list li span.start-time.change-color-playtime {
+    background: rgb(68, 67, 67);
+    color: #fff;
+    border: 3px double lightgray;
+}
+
+.main-screen .check-content .next-btn  a.change-color-btn {
+    background: rgb(214, 40, 40);
+    border: 3px solid #771b1b;
+    color: #fff;
+}
+
+/* ============================= 클래스 추가 / 삭제 */
+
+
+
+
+

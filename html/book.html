@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- reset.css -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> -->
+
+    <!-- common.css -->
+    <link rel="stylesheet" href="../css/common.css">
+
+    <!-- book.css -->
+    <link rel="stylesheet" href="../css/book.css">
+
+    <!-- book.js -->
+    <script src="../js/book.js" defer></script>
+
+    <link rel="stylesheet" href="../css/header-footer.css">
+
+
+</head>
+
+<body>
+    <header>
+        <section class="hbody">
+            <article class="nav">
+                <div class="title-logo"><img src="../image/로고.png" alt="로고"></div>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">영화예매</a></li>
+                    <li><a href="end.html">예매확인</a></li>
+                </ul>
+            </article>
+        </section>
+    </header>
+
+    <div class="main-screen">
+        <section class="container clearfix">
+            <div class="part movie">
+                <div class="title">영화</div>
+                <div class="movie-wrap">
+                    <div class="order">예매율순</div>
+                    <div class="movie-list">
+                        <ul>
+                            <li class="ban12">더퍼스트슬램덩크</li>
+                            <li class="ban12">스즈메의문단속</li>
+                            <li class="ban12">던전앤드래곤-도적들의 명예</li>
+                            <li class="ban15">웅남이</li>
+                            <li class="all">엘카미노</li>
+                            <li class="ban12">소울메이트</li>
+                            <li class="ban12">오토라는남자</li>
+                            <li class="ban12">여섯개의밤</li>
+                            <li class="ban15 soldout">찬란한나의복수</li>
+                            <li class="ban15 soldout">이니셰린의밴시</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="part theater">
+                <div class="title">극장</div>
+
+                <div class="theater-content-wrap">
+                    <div class="region-wrap">
+                        <ul class="region">
+                            <li id="Seoul">서울</li>
+                            <li id="Gyeonggi">경기</li>
+                            <li id="Incheon">인천</li>
+                            <li id="Gangwon">강원</li>
+                            <li id="Chungcheong">대전/충청</li>
+                            <li id="Daegu">대구</li>
+                            <li id="Busan">부산/울산</li>
+                            <li id="Gyeongsang">경상</li>
+                            <li id="Jeolla">광주/전라/제주</li>
+                        </ul>
+                    </div>
+                    <div class="city-wrap">
+                        <ul class="city" id="Seoul">
+                            <li>강남</li>
+                            <li>강변</li>
+                            <li>건대입구</li>
+                            <li>구로</li>
+                            <li>대학로</li>
+                            <li>동대문</li>
+                            <li>등촌</li>
+                            <li>명동</li>
+                        </ul>
+                        <ul class="city" id="Gyeonggi">
+                            <li>경기광주</li>
+                            <li>고양행신</li>
+                            <li>광교</li>
+                            <li>광교상현</li>
+                            <li>광명역</li>
+                            <li>구리</li>
+                            <li>기흥</li>
+                            <li>김포</li>
+                        </ul>
+                        <ul class="city" id="Incheon">
+                            <li>계양</li>
+                            <li>부평</li>
+                            <li>송도타임스페이스</li>
+                            <li>연수역</li>
+                            <li>인천</li>
+                            <li>인천논현</li>
+                            <li>인천도화</li>
+                            <li>인천시민공원</li>
+                        </ul>
+                        <ul class="city" id="Gangwon">
+                            <li>강릉</li>
+                            <li>기린</li>
+                            <li>원주</li>
+                            <li>원통</li>
+                            <li>인제</li>
+                            <li>춘천</li>
+                        </ul>
+                        <ul class="city" id="Chungcheong">
+                            <li>논산</li>
+                            <li>당진</li>
+                            <li>대전</li>
+                            <li>대전가수원</li>
+                            <li>대전가오</li>
+                            <li>대전탄방</li>
+                            <li>대전터미널</li>
+                            <li>서산</li>
+                        </ul>
+                        <ul class="city" id="Daegu">
+                            <li>대구</li>
+                            <li>대구수성</li>
+                            <li>대구스타디움</li>
+                            <li>대구아카데미</li>
+                            <li>대구연경</li>
+                            <li>대구월성</li>
+                            <li>대구한일</li>
+                            <li>대구현대</li>
+                        </ul>
+                        <ul class="city" id="Busan">
+                            <li>대연</li>
+                            <li>동래</li>
+                            <li>부산명지</li>
+                            <li>서면</li>
+                            <li>서면삼정타워</li>
+                            <li>서면상상마당</li>
+                            <li>센텀시티</li>
+                            <li>아시아드</li>
+                        </ul>
+                        <ul class="city" id="Gyeongsang">
+                            <li>거제</li>
+                            <li>경산</li>
+                            <li>고성</li>
+                            <li>구미</li>
+                            <li>김천율곡</li>
+                            <li>김해</li>
+                            <li>김해율하</li>
+                            <li>김해장유</li>
+                        </ul>
+                        <ul class="city" id="Jeolla">
+                            <li>광양</li>
+                            <li>광주금남로</li>
+                            <li>광주상무</li>
+                            <li>여수웅천</li>
+                            <li>순천</li>
+                            <li>목포</li>
+                            <li>나주</li>
+                            <li>광주하남</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="part date">
+                <div class="title">날짜</div>
+                <div class="date-wrap">
+                    <div class="yearmonth-wrap">
+                        <span class="year">2023</span>
+                        <span class="month">4</span>
+                    </div>
+                    <div class="daydate-wrap">
+                        <div class="daydate">
+                            <span class="day">월</span>
+                            <span class="detaildate">3</span>
+                        </div>
+                        <div class="daydate">
+                            <span class="day">화</span>
+                            <span class="detaildate">4</span>
+                        </div>
+                        <div class="daydate">
+                            <span class="day">수</span>
+                            <span class="detaildate">5</span>
+                        </div>
+                        <div class="daydate">
+                            <span class="day">목</span>
+                            <span class="detaildate">6</span>
+                        </div>
+                        <div class="daydate">
+                            <span class="day">금</span>
+                            <span class="detaildate">7</span>
+                        </div>
+                        <div class="daydate sat">
+                            <span class="day">토</span>
+                            <span class="detaildate">8</span>
+                        </div>
+                        <div class="daydate sun">
+                            <span class="day">일</span>
+                            <span class="detaildate">9</span>
+                        </div>
+                        <div class="daydate">
+                            <span class="day">월</span>
+                            <span class="detaildate">10</span>
+                        </div>
+                        <div class="daydate">
+                            <span class="day">화</span>
+                            <span class="detaildate">11</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="part time">
+                <div class="title">시간</div>
+                <div class="time-wrap">
+                    <div class="time-option">
+                        <span class="sun-image">&nbsp;&nbsp;&nbsp;</span>
+                        <span class="morining">조조</span>
+                        <span class="moon-image">&nbsp;&nbsp;&nbsp;</span>
+                        <span class="evening">심야</span>
+                    </div>
+                    <div class="room premium">
+                        <div class="section-title"><b>PREMIUM</b> <em class="typ">Premium관</em></div>
+                        <ul class="time-list">
+                            <li><span class="start-time">10:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">13:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">16:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">19:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">22:00</span><span class="left-seat">64석</span></li>
+                        </ul>
+                    </div>
+                    <div class="room Fdx">
+                        <div class="section-title"><b>4DX</b> <em class="typ">4DX관</em></div>
+                        <ul class="time-list">
+                            <li><span class="start-time">10:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">13:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">16:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">19:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">22:00</span><span class="left-seat">64석</span></li>
+                        </ul>
+                    </div>
+                    <div class="room Tdx">
+                        <div class="section-title"><b>3DX</b> <em class="typ">3DX관</em></div>
+                        <ul class="time-list">
+                            <li><span class="start-time">10:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">13:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">16:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">19:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">22:00</span><span class="left-seat">64석</span></li>
+                        </ul>
+                    </div>
+                    <div class="room two-d">
+                        <div class="section-title"><b>2D</b> <em class="typ">2관</em></div>
+                        <ul class="time-list">
+                            <li><span class="start-time">10:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">13:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">16:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">19:00</span><span class="left-seat">64석</span></li>
+                            <li><span class="start-time">22:00</span><span class="left-seat">64석</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="check-content clearfix">
+            <div class="checkpart poster-title clearfix">
+                <div class="poster" id="poster"></div>
+                <div class="title-wrap">
+                    <span class="seletedTitle"></span>
+                    <span class="selectedRoom"></span>
+                </div>
+            </div>
+            <div class="checkpart book-info">
+                <div class="selected-location-wrap">
+                    <span class="selected-location">극장</span>
+                    <span class="selected-show-location"><b>CNEMABOX</b><em></em></span>
+                </div>
+                <div class="selected-date-wrap">
+                    <span class="selected-date-wrap">일시</span>
+                    <span class="selected-date"></span>
+                    <span class="selected-startTime"></span>
+                </div>
+                <div class="selected-room-wrap">
+                    <span class="selected-room">상영관</span>
+                    <span class="selected-show-room"></span>
+                </div>
+            </div>
+            <div class="checkpart next-btn">
+                <div class="next-btn-wrap">
+                    <a href="#">
+                        <div class="btn-icon">➜</div>
+                        <span class="btn-text">좌석 선택</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+       <footer>
+        <div class="fbody">
+            <div class="company-box footer-box">
+                <div>회사소개</div>
+                <div>인재채용</div>
+                <div>사회공헌</div>
+                <div>이용약관</div>
+                <div>윤리경영</div>
+                <div>고객센터</div>
+                <div>개인정보처리방침</div>
+            </div>
+            <div class="adress-box footer-box">
+                <div class="footer-logo">
+                    <img src="../image/로고.png" alt="#">
+                </div>
+                <div class="footer-address">
+                    <p>서울 강남구 테헤란로 7길 7(역삼동 에스코빌딩 6층)/ TEL:02-561-1911 / FAX:02-538-2613</p>
+                    <p>서울 마포구 신촌로 176 중앙빌딩 / TEL:02-704-1711 / FAX:02-393-9218</p>
+                    <p>서울 마포구 신촌로 176 중앙빌딩 / TEL:02-313-1711 / FAX:02-393-9218</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

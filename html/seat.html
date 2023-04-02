@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/seat.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    
+</head>
+
+<body>          
+    
+    <!-- 헤더 시작 -->
+    <header>
+        <section class="hbody">
+            <article class="nav">
+                <div class="title-logo"><img src="../image/로고.png" alt="로고"></div>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">영화예매</a></li>
+                    <li><a href="end.html">예매확인</a></li>
+                </ul>
+            </article>
+        </section>
+    </header>
+    <!-- 헤더 종료 -->
+
+    <!-- 메인 스크린 영역 시작 -->
+    <div class="main-screen">
+        <div class="quick_reserve">
+            <h2>좌석 선택</h2>
+        </div>
+
+         <div class="container"> <!-- 왼쪽/ 오른쪽 묶음  -->
+
+            <!-- 왼쪽 영역 시작 -->
+            <div class="left">
+
+                <div class="seat-select_section">
+                    <h3>관람인원선택</h3>
+                    <button class="reset"> 
+                        <img src="../image/reset_icon.png" alt="초기화"> 
+                        초기화
+                    </button>
+                </div>
+
+                <div class="seat">
+                    <div class="seat_count">
+                        <div class="number_of_people">
+                            <p>성인</p>
+                            <div class="count_button button">
+                                <button class="minus_button">-</button>
+                                <div class="selectd_seat">0</div>
+                                <button class="plus_button">+</button>
+                            </div>
+                        </div>
+                        <div class="number_of_people">
+                            <p>청소년</p>
+                            <div class="count_button button">
+                                <button class="minus_button">-</button>
+                                <div class="selectd_seat">0</div>
+                                <button class="plus_button">+</button>
+                            </div>
+                        </div>
+                        <div class="number_of_people">
+                            <p>우대</p>
+                            <div class="count_button button">
+                                <button class="minus_button">-</button>
+                                <div class="selectd_seat">0</div>
+                                <button class="plus_button">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Choose_seat">
+                        
+                        <img src="../image/screen.png" alt="스크린" class="screen">
+                            
+                        <!-- <div class="screen"></div> -->
+        
+                            <div class="row">
+                                <span class="row_num">A</span>    
+                            </div>
+                            
+                            <div class="row">
+                                <span class="row_num">B</span>     
+                            </div>
+                    
+                            <div class="row">
+                                <span class="row_num">C</span>     
+                            </div>
+                    
+                            <div class="row">
+                                <span class="row_num">D</span>     
+                            </div>
+                    
+                            <div class="row">    
+                                <span class="row_num">E</span> 
+                            </div>
+                    
+                            <div class="row">
+                                <span class="row_num">F</span>     
+                            </div>
+                    
+                            <div class="row"> 
+                                <span class="row_num">G</span>  
+                            </div> 
+
+                            <div class="row"> 
+                                <span class="row_num">H</span> 
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 왼쪽 영역 종료 -->
+
+
+            <!-- 오른쪽 영역 시작 -->
+            <div class="right">
+
+                <div class="title_area">
+                    <img src="../image/age_limit.png" alt="나이제한" class="age_limit">
+                    <div>
+                        <p class="movie_title"></p>
+                    </div>
+                </div>
+
+                <div class="info_area">
+                    <div class="movie_poster"> </div> 
+                    <p class="location">강동</p>
+                    <p class="room">2관</p>
+                    <p class="date">2023.03.29(수)</p>
+                    <div class="start_time">영화 시간</div>   
+                    
+                </div>
+
+                <div class="choice_seat_area">
+                    <div class="seat_type">
+                        <ul>
+                            <li><div class="seat_condition choice"> </div> <em>선택</em></li>
+                            <li><div class="seat_condition common"> </div> <em>선택가능</em></li>
+                            <li><div class="seat_condition finish"> </div> <em>예매완료</em></li>
+                            <li><div class="seat_condition impossible"> </div> <em>선택불가</em></li>
+                            <li><div class="seat_condition disabled"> </div> <em>장애인석</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="seat_num">
+                        <p class="title">선택 좌석</p>
+                        <div class="my_seat">
+                            <div class="selectable">-</div>
+                            <div class="selectable">-</div>
+                            <div class="selectable">-</div>
+                            <div class="selectable">-</div>
+                            <div class="selectable">-</div>
+                            <div class="selectable">-</div>
+                            <div class="selectable">-</div>
+                            <div class="selectable">-</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 인원 수 출력 -->
+                <div class="count"> </div>
+                <div class="pay_area">
+                    <p class="count"></p>
+                    <div class="pay">
+                        <p>최종결제금액</p>
+                        <div class="money">
+                            <em>0</em>
+                            <p> 원</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button_group">
+                    <button class="previous_button">이전</button>
+                    <button class="next_button disabled">다음</button>
+                </div>
+
+            </div>
+            <!-- 오른쪽 영역 종료 -->
+
+        </div>
+
+    </div>
+    <!-- 메인 스크린 영역 종료 -->
+
+
+    <!-- 푸터 시작 -->
+    <footer>
+        <div class="fbody">
+            <div class="company-box footer-box">
+                <div>회사소개</div>
+                <div>인재채용</div>
+                <div>사회공헌</div>
+                <div>이용약관</div>
+                <div>윤리경영</div>
+                <div>고객센터</div>
+                <div>개인정보처리방침</div>
+            </div>
+            <div class="adress-box footer-box">
+                <div class="footer-logo">
+                    <img src="../image/로고.png" alt="#">
+                </div>
+                <div class="footer-address">
+                    <p>서울 강남구 테헤란로 7길 7(역삼동 에스코빌딩 6층)/ TEL:02-561-1911 / FAX:02-538-2613</p>
+                    <p>서울 마포구 신촌로 176 중앙빌딩 / TEL:02-704-1711 / FAX:02-393-9218</p>
+                    <p>서울 마포구 신촌로 176 중앙빌딩 / TEL:02-313-1711 / FAX:02-393-9218</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 푸터 종료 -->
+    <script type="module" src="../js/seat.js"></script>
+    
+</body>
+
+</html>

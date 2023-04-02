@@ -1,0 +1,364 @@
+.seat{
+    border: 1px solid #d8d9db;
+    background: white;
+    height: 600px;
+}
+
+.main-screen{
+    /* border: 1px solid black; */
+    font-size: 15px;
+    line-height: 1.5;
+    /* font-family: NanumBarunGothic,Dotum,'돋움',sans-serif; */
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+}
+
+/* 버튼 기본 디자인 초기화 */
+button, .button{
+    border: 0;
+    background-color: transparent;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    height: 32px;
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+.quick_reserve{
+    font-size: 1.8em;
+    width: 100%;
+    padding-bottom: 26px;
+}
+
+.container{
+    display: flex;
+    flex: 9;
+}
+    
+
+.container .left{
+    width: 67%;
+    margin-right: 3%;
+    border-top: 1px solid black;
+}
+
+
+.container .left .seat-select_section{
+    padding: 10px 0 10px 0;
+    display: flex;
+    line-height: 32px;
+    font-size: 1vw;
+    justify-content: space-between;
+}
+
+.container .left .seat-select_section button{
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    height: 32px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.container .left .seat-select_section button img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* =================== 좌석 선택 영역 =========================== */
+.container .left .seat_count{
+    background: #f2f4f5;
+    display: flex;
+    padding: 10px 0 10px 20px;
+    font-size: 0.9vw;
+    /* background: #f2f4f5; */
+}
+
+.container .left .seat_count .number_of_people{
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+    
+}
+
+.container .left .seat_count .number_of_people .count_button{
+    display: flex;
+    margin: 0 20px 0 7px;
+}
+
+.left .seat_count .number_of_people .count_button .minus_button, .plus_button{
+    width: 32px;
+    border: 1px solid #ccc ;
+}
+
+.left .seat_count .number_of_people .count_button .minus_button, .selectd_seat{
+    font-size: 17px;
+}
+
+.left .seat_count .number_of_people .count_button .plus_button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.left .seat_count .number_of_people .count_button .minus_button{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.left .seat_count .number_of_people .count_button .selectd_seat{
+    width: 40px;
+    border-top: 1px solid #ccc ;
+    border-bottom: 1px solid #ccc ;
+}
+
+.left .Choose_seat{
+    width: fit-content;
+    /* background: #59bec9; */
+    margin: 60px auto ;
+}
+
+.left .Choose_seat .screen{
+    pointer-events : none;
+    margin-bottom: 40px;
+}
+
+/* 스크린 div로 구현한다면 사용 */
+/* .left .Choose_seat .screen{
+    width: 580px;
+    height: 100px;
+    background: #000;
+} */
+/* 스크린 div로 구현한다면 사용 */
+
+
+.left .Choose_seat .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .Choose_seat .seat{
+    background-color: #747474;
+    width: 25px;
+    height: 20px;
+    margin: 6px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.left .Choose_seat .row_num{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+    border: 1px solid #ccc;
+}
+
+.left .Choose_seat .seat:hover{
+    scale: 1.2;
+}
+.left .Choose_seat .seat:nth-of-type(3){
+    margin-right: 25px;
+}
+
+.left .Choose_seat .seat:nth-of-type(8){
+    margin-left: 25px;
+}
+
+/* 좌석 클릭 시 추가 될  클래스 */
+.left .Choose_seat span.choose{
+    background-color: rgb(80,51,150);
+}
+
+/* ===========================right=========================== */
+
+.container .right{
+    width: 30%;
+    padding: 20px 20px 0 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.container .right .title_area {
+    /* border: 1px solid blue; */
+    display: flex;
+}
+
+.container .right .title_area img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.container .right .info_area {
+    padding: 10px 0 ;
+    border-top: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+    margin-top: 15px;
+    /* position: relative; */
+}
+
+.container .right .info_area .time{
+    margin-top:15px;
+}
+
+.container .right .info_area .movie_poster{
+    width: 70px;
+    height: 105px;
+    float: right;   
+    margin-right: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container .right .choice_seat_area{
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #434343;
+    margin-top: 15px;
+    
+}
+
+.container .right .choice_seat_area .seat_type{
+    border-right: 1px solid #434343;;
+    width: 50%;
+    padding: 20px;
+}
+
+.container .right .choice_seat_area .seat_type li{
+    /* display: flex; */
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.container .right .choice_seat_area .seat_type .seat_condition{
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container .right .choice_seat_area .seat_type .choice{
+    background-color: rgb(80,51,150);
+}
+
+.container .right .choice_seat_area .finish{
+    background-image: url('../image/seat-type2.png ');
+    background-repeat: no-repeat;
+}
+.container .right .choice_seat_area .impossible{
+    background-color: rgb(199, 22, 22);
+}
+.container .right .choice_seat_area .common{
+    background-color: #747474;
+}
+.container .right .choice_seat_area .disabled{
+    background-color: rgb(0, 92, 0);
+}
+
+.container .right .choice_seat_area .seat_num{
+    padding: 20px;
+    width: 50%; 
+    text-align: center;
+}
+
+.container .right .choice_seat_area .seat_num .my_seat{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+} 
+
+.selectable_background{
+    background: purple;
+}
+
+.container .right .choice_seat_area .seat_num .my_seat div{
+    width: 40px;
+    border: 1px solid #434343;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;    
+}
+
+.container .right .count{
+    color: #c4c4c4;
+    position: absolute;
+    bottom: 98px;
+}
+
+.container .right .pay{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #59bec9; */
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    left: 0;    
+    padding: 0 15px 0 15px;
+    line-height: 38px;
+}
+
+.container .right .pay  .money{
+    display: flex;
+}
+
+.container .right .pay  .money em{
+    font-size: 1.6em;
+    margin-right: 3px;
+}
+
+/* 최종 결제금액 출력될 때 색상 변경 */
+.totalprice{
+    color: #59bec9;
+}
+/* 최종 결제금액 출력될 때 색상 변경 */
+
+.container .right .button_group{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.container .right .previous_button{
+    width: 50%;
+    height: 50px;
+    background-color: #53565b;
+    border-radius: 0 0 0 10px;
+    float: left;
+    font-size: 1.2em;   
+    color: #fff;
+}
+
+.container .right .next_button{
+    width: 50%;
+    height: 50px;   
+    border-radius: 0 0 10px 0 ;
+    font-size: 1.2em;   
+} 
+
+/* next_button 활성화 되지 않았을 떄 */
+.disabled{
+    color: #aaa;
+    background: #e0e0e0;
+    pointer-events: none;
+}
+
+/* next_button 활성화 되었을 떄 */
+.active{
+    color: #fff;
+    background-color: #329eb1;
+}
