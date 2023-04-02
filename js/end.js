@@ -32,7 +32,8 @@ const $secretBoxLi = [...$secretBox];
 const $getBook = JSON.parse(localStorage.getItem("bookinfo")); // bookInfo 객체 받는 부분 ==> 사용하실 때 ex) $getBook.title $getBook.startTime
 const $people_type_number = JSON.parse(localStorage.getItem("people_type_number")); //인원수
 const $seatArr = JSON.parse(localStorage.getItem("seatArr")); //좌석 번호
-
+console.log($people_type_number);
+console.log($seatArr);
 
 switch ($getBook.title) {
     case "더퍼스트슬램덩크":
@@ -93,12 +94,12 @@ switch ($getBook.title) {
     default:
 }
 
-$day.innerHTML = `cinemabox ${$getBook.date}<br><span>${$getBook.startTime}</span>`;
-$seat.innerHTML = `${$getBook.room}<br><span>${$getSeat.people_number}</span>`;
-$headCount.innerHTML = `${$getSeat.seatId}`;
+$day.innerHTML = `${$getBook.location} ${$getBook.date}<br><span>${$getBook.startTime}</span>`;
+$seat.innerHTML = `${$getBook.room}<br><span>${$people_type_number}</span>`;
+$headCount.innerHTML = `${$seatArr}`;
 
 $click.parentElement.addEventListener('click', () => {
-   if ($getSeat.seatId) {
+   if ($people_type_number) {
         for (let i = 0; i < $secretBoxLi.length; i++) {
             $secretBoxLi[i].style.opacity = '0';
             $secretBoxLi[i].style.transition = 'opacity ' + i + 's ease-out';

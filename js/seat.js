@@ -1,10 +1,14 @@
 const $getBook = JSON.parse(localStorage.getItem("bookinfo")); // bookInfo 객체 받는 부분 ==> 사용하실 때 ex) $getBook.title $getBook.startTime
+console.log($getBook.title);
+console.log($getBook.startTime);
+console.log($getBook.room);
 console.log($getBook);
  
 
 //페이지 새로고침=================================================
 const $reset = document.querySelector('.reset');
-$reset.onclick =reset;
+$reset.onclick = reset;
+
 function reset() {
     window.location.reload();
 }
@@ -201,10 +205,10 @@ function totalPrice() {
     people_type_number='';
     if (clickable_Seat === real_click_seat) {
         $money.textContent = total_price; //가격 출력
-        for(let i=0;i<3;i++){  //관람인원 종류, 수출력
-            if($minusButtons[i].nextElementSibling.textContent!=='0' && $minusButtons[i].nextElementSibling.textContent!=='')
-             people_type_number += ($minusButtons[i].parentNode.previousElementSibling.textContent)
-                   +" "+($minusButtons[i].nextElementSibling.textContent)+" · ";
+        for (let i = 0; i < 3; i++) { //관람인원 종류, 수출력
+            if ($minusButtons[i].nextElementSibling.textContent !== '0' && $minusButtons[i].nextElementSibling.textContent !== '')
+                people_type_number += ($minusButtons[i].parentNode.previousElementSibling.textContent) +
+                " " + ($minusButtons[i].nextElementSibling.textContent) + " · ";
         }
 
         //마지막 문자열에서 " · " 제거
@@ -224,14 +228,14 @@ function totalPrice() {
 
 
 //다음 버튼 활성화or비활성화 판단 함수===================================
-function nextButton(value){
-    if(value===true){
+function nextButton(value) {
+    if (value === true) {
         $next_button.classList.remove("disabled");
         $next_button.classList.add("active");
-    }else if(value===false){
+    } else if (value === false) {
         $next_button.classList.add("disabled");
         $next_button.classList.remove("active");
-    }  
+    }
 }
 //다음 버튼 활성화/비활성화 판단 함수 종료===================================
 
